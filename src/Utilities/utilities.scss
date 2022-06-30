@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@100;300;400&display=swap');
+
+* {
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+//set colors
+
+$primary-color: #10202c;
+$secondary-color: #98a9b7;
+$accent-color: #2fad69;
+$bg-color: #08141e;
+$text-color: #a0b3c1;
+$transition: all 0.7s ease;
+$border-radius: 5px;
+$box-shadow : -2px 3px 3px #07121b;
+$box-shadow-hover :0px 5px 8px 4px #040c12;
+
+$border-radius-box: 3rem 0 0 15rem;
+
+@mixin respond($breakpoint) {
+    @if $breakpoint==phone {
+        @media only screen and (max-width: 600px) {
+            @content;
+        }
+    }
+
+    @if $breakpoint==tab-port {
+        @media only screen and (max-width: 900px) {
+            @content;
+        }
+    }
+
+    @if $breakpoint==tab-land {
+        @media only screen and (max-width: 1200px) {
+            @content;
+        }
+    }
+
+    @if $breakpoint==big-desktop {
+        @media only screen and (min-width: 1200px) {
+            @content;
+        }
+    }
+}
+
+//margin and padding
+
+$spaceamounts : (1, 2, 3, 4, 5, 6);
+
+@each $space in $spaceamounts {
+
+    //general margin
+    .m-#{$space} {
+        margin: #{$space}rem;
+    }
+
+    //margin on vertical axis
+    .mx-#{$space} {
+        margin: 0 #{$space}rem;
+    }
+
+    //margin on horizontal axis
+    .my-#{$space} {
+        margin: #{$space}rem 0;
+    }
+
+    //general padding
+    .p-#{$space} {
+        padding: #{$space}rem;
+    }
+
+    //padding on vertical axis
+    .px-#{$space} {
+        padding: #{$space}rem 0;
+    }
+
+    //padding on horizontal axis
+    .py-#{$space} {
+        padding: #{$space}rem 0;
+    }
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    transition: $transition;
+    color: $text-color;
+    padding: .3rem;
+
+
+    &:hover {
+        border-bottom: 1px solid $accent-color;
+    }
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: $bg-color;
+    color: $text-color;
+    font-size: 16px;
+
+    @include respond(tab-port) {
+        font-size: 14px;
+    }
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'DM Serif Display', serif;
+}
+
+h1 {
+    font-size: 4rem;
+    line-height: 1;
+    margin: 1.5rem 0;
+
+    @include respond(phone) {
+        font-size: 2rem;
+    }
+
+}
+
+h2 {
+    font-size: 3rem;
+    line-height: 1;
+    margin: 1.5rem 0;
+
+    @include respond(phone) {
+        font-size: 1.5rem;
+    }
+
+}
+h3 {
+    font-size: 2rem;
+    line-height: 1;
+    margin: 1.5rem 0;
+
+    @include respond(phone) {
+        font-size: 1.3rem;
+    }
+
+}
+
+button {
+    border: none;
+    outline: none;
+    background-color: $accent-color;
+    color: $bg-color;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    border-radius: $border-radius;
+    cursor: pointer;
+    width: max-content;
+    transition: $transition;
+    border: 1px solid $accent-color;
+
+    @include respond(phone) {
+        font-size: .8rem;
+        padding: 1rem;
+    }
+
+    &:hover {
+        border-color: $secondary-color;
+        color: $secondary-color;
+        background: none;
+        // border-bottom: 2px solid $accent-color;
+
+    }
+}
+
+.accent {
+    color: $accent-color;
+}
+
+::placeholder {
+    color: $secondary-color;
+}
+.d-f{
+    display: flex;
+}

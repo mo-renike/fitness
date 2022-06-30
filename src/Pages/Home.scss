@@ -1,0 +1,227 @@
+@import "../Utilities/utilities.scss";
+
+
+.home {
+    padding: 0 4rem;
+
+    @include respond(tab-port) {
+        padding: 1rem;
+    }
+
+    &__hero {
+        display: grid;
+        position: relative;
+        grid-template-columns: 40% 50%;
+        grid-gap: 10%;
+        height: fit-content;
+        padding: 3rem 0;
+
+        @include respond(tab-port) {
+            grid-template-columns: 100%;
+            padding: 1rem 0;
+            grid-gap: 0;
+        }
+
+        &_left {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            // padding: 2rem;
+
+            button {
+                margin: 1.9rem 0;
+            }
+        }
+
+        &_right {
+            overflow: hidden;
+            position: relative;
+            height: 30rem;
+            border-bottom: 3px solid $primary-color;
+            border-radius: $border-radius-box;
+
+            @include respond(tab-port) {
+                height: 20rem;
+                border-radius: $border-radius;
+            }
+
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                object-position: center;
+                border-radius: inherit;
+                transition: $transition;
+                cursor: pointer;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                right: 0;
+                background-color: rgba($bg-color, .3);
+                pointer-events: none;
+            }
+        }
+
+        .marq {
+            font-size: 16.5rem;
+            letter-spacing: 10px;
+            opacity: .05;
+            position: absolute;
+            top: 20rem;
+            background: none;
+            z-index: -1;
+
+            @include respond(phone) {
+                display: none;
+            }
+        }
+    }
+
+    &__search {
+        margin-top: 2rem;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+
+        @include respond(phone) {
+            margin-top: 1rem;
+        }
+
+        &_header {
+            margin-top: 4rem;
+
+            @include respond(phone) {
+                margin-top: 1rem;
+            }
+        }
+
+        form {
+            display: flex;
+            align-items: center;
+            width: 60%;
+            justify-content: center;
+
+            @include respond(phone) {
+                width: 100%;
+            }
+
+            input {
+                padding: 1rem;
+                width: 60%;
+                margin: 1rem 0;
+                background: $primary-color;
+                outline: none;
+                border-radius: $border-radius;
+                border: 1px solid $primary-color;
+                color: $text-color;
+                // box-shadow: inset -1px -1px 1px #101010;
+            }
+
+            // button {
+            //     border: none;
+            // }
+        }
+
+        &_body {
+            margin-top: 2rem;
+            width: 100%;
+            padding: 10px;
+
+            .bodyPart {
+                // display: grid;
+                // grid-template-columns: repeat(4, minmax(8rem, 1fr));
+                // gap: 0.5em;
+                display: flex;
+                padding: 0;
+                overflow-x: scroll;
+
+                >* {
+                    margin-right: 1rem;
+                    min-width: 10rem;
+                    padding: 1rem 0;
+                    // border: 2px solid $primary-color;
+                    box-shadow: $box-shadow;
+                    background-color: $primary-color;
+                    transition: .3s ease-in-out;
+                    text-transform: capitalize;
+                    border-radius: $border-radius;
+                    cursor: pointer;
+
+                    &:hover {
+                        box-shadow: $box-shadow-hover;
+                    }
+                }
+            }
+
+            .d-f {
+                margin-bottom: .5rem;
+                justify-content: space-between;
+            }
+        }
+    }
+
+    &__exercises {
+        margin-top: 2rem;
+ 
+
+        &_wrapper {
+            display: grid;
+            grid-gap: 2rem;
+            margin-top: .5rem;
+            grid-template-columns: repeat(3, minmax(8rem, 1fr));
+            .card {
+                // box-shadow: $box-shadow;
+                background-color: $primary-color;
+                transition: .3s ease-in-out;
+                border-radius: $border-radius;
+                border: none;
+
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                    border-radius: inherit;
+                    background-color: white;
+                }
+
+                p {
+                    font-size: .8rem;
+                    padding: 0 .5rem;
+                    text-transform: capitalize;
+                }
+
+                .info {
+                    display: flex;
+                    justify-content: space-between;
+                    margin: .4rem 0;
+                    align-items: center;
+
+                    span {
+                        background-color: $accent-color;
+                        color: $primary-color;
+                        font-size: .7rem;
+                        padding: 0.5rem;
+                        margin-right: .4rem;
+                        text-transform: capitalize;
+                        border-radius: $border-radius;
+                        // &:hover {}
+                    }
+                }
+
+                &:hover {
+                    box-shadow: $box-shadow-hover;
+                }
+            }
+        }
+    }
+}

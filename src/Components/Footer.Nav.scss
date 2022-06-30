@@ -1,0 +1,36 @@
+@import "../Utilities/utilities.scss";
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    // width: max-content;
+    align-items: center;
+    margin-left: auto;
+    padding: .5rem 4rem;
+
+    // background-color: $primary-color;
+    @include respond(phone) {
+        padding: 1rem;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        text-transform: uppercase;
+        color: $text-color;
+
+        >* {
+            border-bottom: .1rem solid $text-color;
+            margin-left: .5rem;
+            // padding:.5rem 1rem;
+        }
+    }
+
+    .logo {
+        background: none;
+    }
+}
+
+.footer {
+    background-color: darken($bg-color, $amount: 5);
+}
