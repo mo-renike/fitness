@@ -5,7 +5,7 @@ import { Box } from "@mui/material";
 import Home from "./Pages/Home";
 import ExerciseDetails from "./Pages/ExerciseDetails";
 import Navbar from "./Components/Navbar";
-import Footer from "./Components/Footer";
+// import Footer from "./Components/Footer";
 
 const App = () => {
   return (
@@ -13,9 +13,9 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/excercise/:id" element={<ExerciseDetails />} />
+        <Route path="/exercise/:id" element={<ExerciseDetails />} />
       </Routes>
-      <Footer />
+      {/* <Footer /> */}
     </Box>
   );
 };

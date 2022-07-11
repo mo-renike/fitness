@@ -9,14 +9,12 @@ const ExerciseScrollBar = ({ data, bodyPart, setBodyPart }) => {
     <div className="bodyPart">
       {data.map((item) => {
         return (
-          <div
-            key={item.id}
-            onClick={() => {
-              setBodyPart(item);
-            }}
-          >
-            <BodyPart item={item} bodyPart={bodyPart} setBodyPart={setBodyPart} />
-          </div>
+            <BodyPart
+             key={item.id}
+              item={item}
+              bodyPart={bodyPart}
+              setBodyPart={setBodyPart}
+            />
         );
       })}
     </div>

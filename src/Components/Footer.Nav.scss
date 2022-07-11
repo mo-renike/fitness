@@ -5,12 +5,14 @@
     justify-content: space-between;
     // width: max-content;
     align-items: center;
-    margin-left: auto;
-    padding: .5rem 4rem;
+    padding: .4rem 3rem;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 100;
 
-    // background-color: $primary-color;
     @include respond(phone) {
-        padding: 1rem;
+        padding: 1rem 2rem;
     }
 
     &__list {
@@ -27,7 +29,10 @@
     }
 
     .logo {
-        background: none;
+
+        h3 {
+            margin: 0;
+        }
     }
 }
 

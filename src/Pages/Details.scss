@@ -1,0 +1,121 @@
+@import "../Utilities/utilities.scss";
+
+.details {
+    margin-top: 3rem;
+    padding: 3rem;
+
+    @include respond(phone) {
+        padding: 1rem;
+    }
+
+    &__row {
+        padding: 3rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 4rem;
+
+        &_text {
+            h1 {
+                text-transform: capitalize;
+            }
+        }
+
+        @include respond (tab-port) {
+            grid-template-columns: 100%;
+            padding: 1rem;
+        }
+    }
+
+    &__extra {
+        margin-top: 3rem;
+
+        &_item {
+            display: flex;
+            align-items: center;
+            margin: .6rem 0;
+
+            img {
+                width: 3rem;
+                // width: auto;
+                margin-right: 2rem;
+            }
+
+            h3 {
+                text-transform: capitalize;
+                font-size: 1.4rem;
+                font-weight: bold;
+            }
+        }
+    }
+
+    &__videos {
+        padding: 3rem;
+
+        @include respond(phone) {
+            padding: 1rem;
+        }
+
+        h3 {
+            text-transform: capitalize;
+
+            span {
+                color: $accent-color;
+            }
+        }
+
+        &_list {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 2rem;
+
+            @include respond(tab-land) {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            @include respond(phone) {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+
+        &_item {
+            display: flex;
+            height: 20rem;
+            flex-direction: column;
+            box-shadow: $box-shadow;
+            background-color: $primary-color;
+            transition: .3s ease-in-out;
+            border-radius: $border-radius;
+            justify-content: space-between;
+
+            img {
+                height: 80%;
+                width: 100%;
+                object-fit: cover;
+            }
+
+            p {
+                font-size: .8rem;
+                color: $accent-color;
+                padding: .4rem;
+            }
+        }
+    }
+
+    &__similar {
+        padding: 3rem;
+
+        @include respond(phone) {
+            padding: 1rem;
+        }
+
+        &_wrapper {
+            display: flex;
+            overflow-x: scroll;
+
+            img {
+                margin-right: 1rem;
+                border-radius: $border-radius;
+            }
+        }
+    }
+}

@@ -71,7 +71,7 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
 
         <ExerciseScrollBar
           data={bodyParts}
-          setBodyParts={setBodyPart}
+          setBodyPart={setBodyPart}
           bodyPart={bodyPart}
         />
       </div>

@@ -13,9 +13,9 @@ const ExersiseCard = ({ exercise }) => {
           <span>{exercise.target}</span>
         </div>
         <p>
-          {exercise.name.length < 20
+          {exercise.name.length < 45
             ? `${exercise.name}`
-            : `${exercise.name.substring(0, 25)}...`}
+            : `${exercise.name.substring(0, 45)}...`}
         </p>
       </div>{" "}
     </Link>
