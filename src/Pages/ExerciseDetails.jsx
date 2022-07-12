@@ -9,6 +9,7 @@ import {
   youtubeOptions,
 } from "../functions/FetchData";
 import "./Details.scss";
+import { HashLink } from "react-router-hash-link";
 
 const ExerciseDetails = () => {
   const { id } = useParams();
@@ -49,6 +50,7 @@ const ExerciseDetails = () => {
 
   return (
     <div className="details">
+      <HashLink to="/#exercises">Back</HashLink>
       <Detail exerciseDetail={exerciseDetail} />
       <ExerciseVideos
         exerciseVideos={exerciseVideos}

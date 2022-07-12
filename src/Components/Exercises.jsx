@@ -1,4 +1,4 @@
-import { Search } from "@mui/icons-material";
+
 import { Pagination } from "@mui/material";
 import React, { useState, useEffect } from "react";
 import ExersiseCard from "./ExersiseCard";
@@ -38,6 +38,7 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
       setExercises(exercisesData);
     };
     fetchExercisesData();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [bodyPart]);
 
   return (
