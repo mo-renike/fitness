@@ -282,6 +282,20 @@ button:hover {
   display: flex;
 }
 
+.css-n8417t-MuiSvgIcon-root-MuiPaginationItem-icon {
+  color: #2fad69;
+  background-color: #10202c;
+}
+
+.css-ax94ij-MuiButtonBase-root-MuiPaginationItem-root {
+  color: #2fad69 !important;
+  background-color: #10202c !important;
+}
+
+.css-1scal0h-MuiPaginationItem-root {
+  color: #2fad69 !important;
+}
+
 .home__hero {
   position: relative;
   width: 100vw;
@@ -309,8 +323,27 @@ button:hover {
 }
 
 .home__hero_text p {
-  margin: .9rem 0;
-  font-size: 1rem;
+  margin: 2rem 0;
+}
+
+.home__hero_text a {
+  background-color: #2fad69;
+  color: #08141e;
+  cursor: pointer;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+  border-radius: 5px;
+  border: 1px solid #2fad69;
+  padding: .5rem 1.5rem;
+}
+
+.home__hero_text a:hover {
+  border-color: #98a9b7;
+  color: #98a9b7;
+  background: none;
 }
 
 .home__hero_img {
@@ -337,7 +370,7 @@ button:hover {
   right: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.85);
+  background: rgba(0, 0, 0, 0.75);
 }
 
 .home__hero_left {
@@ -354,6 +387,15 @@ button:hover {
 }
 
 .home__hero_left button {
+  background-color: #2fad69;
+  color: #08141e;
+  cursor: pointer;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+  border: 1px solid #2fad69;
   margin: 1.9rem 0;
 }
 

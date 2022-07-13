@@ -1,4 +1,5 @@
 import React from "react";
+import { HashLink } from "react-router-hash-link";
 import heroImg from "../assets/images/exer.jpg";
 
 const HomeHero = () => {
@@ -20,9 +21,9 @@ const HomeHero = () => {
         </h1>
         <p>
           Exercises that will help you on your road to healthy living, weight
-          loss and stress relief
+          loss and stress relief.
         </p>
-        <button href="#exercises">Explore Exercises</button>
+        <HashLink to="/#exercises">Explore Exercises</HashLink>
       </div>
       <div className="home__hero_img">
         {" "}
