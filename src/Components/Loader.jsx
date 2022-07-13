@@ -1,11 +1,12 @@
 import React from "react";
-import { InfinitySpin } from "react-loader-spinner";
+import { Bars } from "react-loader-spinner";
 
 const Loader = () => {
-  return <div>
-    <InfinitySpin size={100} color="#00BFFF" />
-  </div>;
+  return (
+    <div>
+      <Bars color="#00BFFF" height={80} width={80} />
+    </div>
+  );
 };
 
 export default Loader;
- 
