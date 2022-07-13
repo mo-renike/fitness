@@ -28,7 +28,8 @@
                 margin: 2rem 0;
                 // font-size: 1rem;
             }
-            a{
+
+            a {
                 background-color: $accent-color;
                 color: $bg-color;
                 cursor: pointer;
@@ -36,9 +37,9 @@
                 transition: $transition;
                 border-radius: $border-radius;
                 border: 1px solid $accent-color;
-                padding:.5rem 1.5rem;
+                padding: .5rem 1.5rem;
 
-                &:hover{
+                &:hover {
                     border-color: $secondary-color;
                     color: $secondary-color;
                     background: none;
