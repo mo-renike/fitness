@@ -282,6 +282,20 @@ button:hover {
   display: flex;
 }
 
+.css-n8417t-MuiSvgIcon-root-MuiPaginationItem-icon {
+  color: #2fad69;
+  background-color: #10202c;
+}
+
+.css-ax94ij-MuiButtonBase-root-MuiPaginationItem-root {
+  color: #2fad69 !important;
+  background-color: #10202c !important;
+}
+
+.css-1scal0h-MuiPaginationItem-root {
+  color: #2fad69 !important;
+}
+
 .nav {
   display: -webkit-box;
   display: -ms-flexbox;

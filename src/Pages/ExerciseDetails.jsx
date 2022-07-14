@@ -31,6 +31,7 @@ const ExerciseDetails = () => {
         youtubeOptions
       );
       setExerciseVideos(exerciseVideosData.contents);
+      console.log(exerciseVideosData.contents);
 
       const targetMuscleData = await FetchData(
         `https://exercisedb.p.rapidapi.com/exercises/target/${exerciseDetailData.target}`,

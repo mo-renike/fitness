@@ -2,12 +2,12 @@ import React from "react";
 
 const ExerciseVideos = ({ exerciseVideos, name }) => {
   if (exerciseVideos.length === 0) {
-    return "loading...";
+    return "No Videos Found";
   }
   return (
     <div className="details__videos">
       <h3>
-        Watch <span>{name} </span>exercise videos
+        Watch  some <span>{name} </span>exercise videos
       </h3>
       <div className="details__videos_list">
         {exerciseVideos.slice(0, 4).map((video, index) => (
