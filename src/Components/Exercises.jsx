@@ -43,7 +43,7 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
 
   return (
     <div className="home__exercises" id="exercises">
-      <h4>Showing Search Results</h4>
+      <h4>Showing Search Results ...</h4>
       <div className="home__exercises_wrapper">
         {currentExercises.length ? (
           currentExercises.map((exercise, index) => (

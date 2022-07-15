@@ -283,8 +283,8 @@ button:hover {
 }
 
 .css-n8417t-MuiSvgIcon-root-MuiPaginationItem-icon {
-  color: #2fad69;
-  background-color: #10202c;
+  color: #2fad69 !important;
+  background-color: #10202c !important;
 }
 
 .css-ax94ij-MuiButtonBase-root-MuiPaginationItem-root {

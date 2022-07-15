@@ -55,7 +55,7 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
           onChange={setSearchValue}
           type="search"
           value={search}
-          placeholder="Search Exercises.."
+          placeholder="Search Exercises by body part.."
         />
         <button onClick={handleSearch}>Search</button>
       </form>
@@ -63,7 +63,7 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
       <div className="home__search_body">
         <div className="d-f">
           {" "}
-          <h4>Popular Bodyparts</h4>{" "}
+          <h4>Click Popular Bodyparts</h4>{" "}
           <span>
             Scroll <BsArrowRightShort />{" "}
           </span>

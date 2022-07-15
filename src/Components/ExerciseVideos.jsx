@@ -2,10 +2,11 @@ import React from "react";
 
 const ExerciseVideos = ({ exerciseVideos, name }) => {
   if (exerciseVideos.length === 0) {
-    return "No Videos Found";
+    return "Loading Videos...";
   }
   return (
     <div className="details__videos">
+      
       <h3>
         Watch  some <span>{name} </span>exercise videos
       </h3>

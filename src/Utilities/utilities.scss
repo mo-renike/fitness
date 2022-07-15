@@ -193,10 +193,13 @@ button {
     color: $secondary-color;
 }
 
+
 .d-f {
     display: flex;
+    margin-bottom: .5rem;
+    align-items: center;
+    justify-content: space-between;
 }
-
 
 .css-n8417t-MuiSvgIcon-root-MuiPaginationItem-icon {
     color: $accent-color !important;

@@ -13,7 +13,7 @@ const Navbar = () => {
 
       <div className="nav__list">
         <Link to="/">Home</Link>
-        <a href="/#exercises">Exercises</a>
+        {/* <a href="/#exercises">Exercises</a> */}
       </div>
     </div>
   );
