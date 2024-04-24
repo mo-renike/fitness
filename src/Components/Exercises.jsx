@@ -38,8 +38,7 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
       setExercises(exercisesData);
     };
     fetchExercisesData();
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [bodyPart]);
+  }, [bodyPart, setExercises]);
 
   return (
     <div className="home__exercises" id="exercises">
